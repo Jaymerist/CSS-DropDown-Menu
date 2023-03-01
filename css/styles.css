@@ -1,0 +1,144 @@
+/* Utility Classes */
+
+body{
+    background-color: #eceff1;
+    color: #546e74;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.flex{
+    align-items: center;
+    display: flex;
+}
+
+.inner-container{
+    margin: auto;
+    max-width: 80rem;
+
+}
+
+/* Header Styles */
+
+header{
+    background-color: #b71c1c;
+    border-bottom: 1px solid #b71c1c;
+    box-shadow: #546e74;
+    color:#eceff1;
+    padding: 0.5rem 0 0.75rem 1rem;
+}
+
+header a{
+    color:#eceff1;
+    display: block;
+    text-decoration: none;
+}
+
+.logo,
+nav{
+    justify-content: center;
+    text-align: center;
+}
+
+.logo svg{
+    margin: 0 1rem;
+    width: 3rem;
+}
+
+.logo svg path{
+    fill: #eceff1;
+}
+
+.logo h1{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 2rem;
+}
+
+.logo a{
+    line-height: 1;
+}
+
+.logo p{
+    letter-spacing: 0.3rem;
+}
+
+/* Toggle Links */
+
+nav{
+    padding-top: 1rem;
+}
+
+.top-level{
+    margin: 0 1rem;
+    min-width: 12rem;
+    position: relative;
+    white-space: nowrap;
+}
+
+nav input[type="checkbox"]{
+    display: none;
+}
+
+.menu-label{
+    cursor: pointer;
+    user-select: none;
+}
+
+.menu-label span{
+    font-size: 0.75rem;
+    margin: 0 0.25rem;
+}
+
+.collapse-menu{
+    background-color: #b71c1c;
+    position: absolute;
+    padding: 1rem;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 5px 5px 5px #b0beb0;
+    left: 0;
+    min-width: 100%;
+    text-align: left;
+    top: 0.5rem;
+    transition: transform 0.3s;
+    transform-origin: top;
+    z-index: 2;
+}
+
+.collapse-menu a{
+    line-height: 2rem;
+}
+
+.collapse-menu a:hover{
+    text-decoration: underline;
+}
+
+input:not(:checked) ~ .collapse-menu{
+    transform: scaleY(0);
+}
+
+/*Main Styles*/
+main section .container,
+footer{
+    max-width: 60ch;
+    padding: 3rem 0;
+    text-align: center;
+    margin: 0 auto;
+    top: 100vh;
+    position: sticky;
+
+}
+
+footer hr{
+    border: 1px solid #cfd8dc;
+    margin: 3rem auto;
+    max-width: 50%;
+
+}
+
+footer svg{
+    margin-bottom: 1rem;
+    width: 2rem;
+}
+
+footer svg path{
+    fill:#546e74;
+}
